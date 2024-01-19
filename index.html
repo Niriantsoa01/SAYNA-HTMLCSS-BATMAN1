@@ -5,225 +5,358 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project | Home</title>
+    <link href="Bootstrap/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Header-->
     <header>
-        <div class="logo">
-            <img src="assets/logos/logohome.png" alt="">
-        </div>
-        <!--menu-->
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#home">HOME</a>
-                </li>
-            </ul>
-        </nav>
-        <!--home-text-->
-        <div class="home-text">
-            <p>Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, officiis?
-            </p>
-            <!--button-->
-            <div class="button">
-                <button class="btn button1">VOIR LES HEROS</button>
-                <button class="btn button2">LES ADVERSAIRES</button>
-        </div>
-        </div>
-        <!--fleche_down-->
-    <div class="fleche_down">
-        <img src="assets/logos/flèche_down_header.png" alt="">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand mt-3" href="#">
+                <img src="assets/logos/logohome.png" alt="Logo" style="width:150px;">
+              </a>
+              <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!--Home texte & logos aside-->
+          <div class="container text-white justify-content-center">
+            <div class="row">
+                    <div class="col-sm-10">
+                    <p class="texte text-white">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Quaerat, accusamus Lorem ipsum dolor sit, amet 
+                         consectetur adipisicing elit. Ut, quaerat!</p>
+                         <h2>Il est Batman</h2>
+                         <div class="btn">
+                            <button type="button" class="btn btn-outline-info text-white"><a href="#cinema">VOIR LES HEROS</a></button>
+                            <button type="button" class="btn btn-outline-info text-white">
+                                <a href="#adversaire">LES ADVERSAIRES</a></button>
+                          </div>
+                   </div>
+                <div class="col-sm-2">
+                    <ul class="logos">
+                        <li>
+                            <img src="assets/logos/logo_bat_flèche.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/logos/icon_facebook.png" alt="" class="social">
+                        </li>
+                        <li>
+                            <img src="assets/logos/icon_ig.png" alt="" class="social">
+                        </li>
+                        <li>
+                            <img src="assets/logos/icon_tw.png" alt="" class="social">
+                        </li>
+                        <li>
+                            <img src="assets/logos/logo_bat_flèche_2.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+              </div>
+           </div>
+          <div class="down_fleche">
+        <img src="assets/logos/flèche_down_header.png" alt="down_fleche" class="down_fleche">
     </div>
     </header>
+
     <!--main-->
     <main>
-        <!--first section-->
-        <section class="first-section" id="home">
-            <h1>BATMAN AU CINEMA</h1>
-            <p class="content">Lorem ipsum 
-                dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, ex!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, adipisci!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, iste.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quibusdam!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eligendi?
-             </p>
-             <!--Card-->
-             <div class="card-container">
+        <section class="section-content mt-5" id="cinema">
+            <div class="container-fluid mt-3">
+          <h1 class="title text-white">BATMAN AU CINEMA</h1>
+          <p class="content-text text-white mt-3">
+            Le personnage de Batman est un super héros de notre univers de DC Comics. Il a été créé par le
+            dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples
+            acteurs pour interpréter un homme chauve-souris. Voici les trois derniers : 
+          </p>
+        </div>
+        <div class="row">
+            <div class="col-lg">
                 <div class="card">
-                    <img src="assets/illustration/Bathome2.png" alt="Image de la carte 1">
-                    <div class="card-title">
-                    <h2>Robert Pattinson</h2> 
-                    <h3>(2022)</h3> 
-                    </div>
+                    <img src="assets/illustration/Bathome2.png" alt="">
                 </div>
-        
-                <div class="card">
-                    <img src="assets/illustration/Bathome3.png" alt="Image de la carte 2">
-                    <div class="card-title">
-                        <h2>Christian Bale</h2> 
-                        <h3>(2006-2008-2012)</h3> 
-                        </div>
-                </div>
-        
-                <div class="card">
-                    <img src="assets/illustration/Bathome4.png" alt="Image de la carte 3">
-                    <div class="card-title">
-                        <h2>Ben Affleck</h2> 
-                        <h3>(2016-2017/2020-2023)</h3> 
-                        </div>
-                </div>
+                <h2 class="card-title text-white">
+                    Robert Pattinson <br>
+                        (2022)
+                </h2>
             </div>
-        </section>
-
-        <!--Second section-->
-        <section class="first-section" id="home">
-            <h1>NEMESIS</h1>
-            <p class="content">Lorem ipsum 
-                dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, ex!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, adipisci!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, iste.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quibusdam!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eligendi?
-             </p>
-             <!--Card-->
-             <div class="card-container">
+            <div class="col-lg">
                 <div class="card">
-                    <img src="assets/illustration/Bathome5.png" alt="Image de la carte 1">
-                    <div class="card-title">
-                    <h2>The Riddler-Paul Dano</h2> 
-                    <h3>(2022)</h3> 
-                    </div>
+                    <img src="assets/illustration/Bathome3.png" alt="">
                 </div>
-        
-                <div class="card">
-                    <img src="assets/illustration/Bathome6.png" alt="Image de la carte 2">
-                    <div class="card-title">
-                        <h2>Le Joker-Heath Ledger</h2> 
-                        <h3>(2008)</h3> 
-                        </div>
-                </div>
-                <div class="card">
-                    <img src="assets/illustration/Bathome7.png" alt="Image de la carte 3">
-                    <div class="card-title">
-                        <h2>Darkseid-Ray Porter</h2> 
-                        <h3>(2022)</h3> 
-                        </div>
-                </div>
-            </div>
-        </section>
-
-            <!--Third Section-->
-
-            <section class="first-section" id="home">
-                <h1>ALLIES</h1>
-                <p class="content">Lorem ipsum 
-                    dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, ex!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quis.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, adipisci!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, iste.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quibusdam!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eligendi?
-                 </p>
-                 <!--Card-->
-                 <div class="card-container">
-                    <div class="card">
-                        <img src="assets/illustration/Bathome9.png" alt="Image de la carte 1">
-                        <div class="card-title">
-                        <h2>Robert Pattinson</h2> 
-                        <h3>(2022)</h3> 
-                        </div>
-                    </div>
-            
-                    <div class="card">
-                        <img src="assets/illustration/Bathome8.png" alt="Image de la carte 2">
-                        <div class="card-title">
-                            <h2>Christian Bale</h2> 
-                            <h3>(2006-2008-2012)</h3> 
-                            </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/illustration/Bathome10.png" alt="Image de la carte 3">
-                        <div class="card-title">
-                            <h2>Ben Affleck</h2> 
-                            <h3>(2016-2017/2020-2023)</h3> 
-                            </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Justice league-->
-
-            <section class="first-section" id="home">
-                <h1>JUSTICE LEAGUE</h1>
-                <p class="content">Lorem ipsum 
-                    dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, ex!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quis.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, adipisci!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, iste.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quibusdam!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eligendi?
-                 </p>
-                 <!--image-->
-                 <div class="img-content">
-                    <img src="assets/illustration/Bathome11.png" alt="">
-                 </div>
+                <h2 class="card-title text-white">
+                    Christian Bale <br>
+                    (2006 - 2008 - 2012)
                     
-            </section>
-
-            <!--multimedia-->
-
-            <section class="first-section" id="home">
-                <h1>MULTIMEDIA</h1>
-               
-                 <!--slide image-->
-             <div class="slide-content">
-                <div class="slider1">
-                    <img src="assets/logos/icon_flèche_1.png">
-                </div>
-                <div class="slideshow">
-                    <div class="image1">
-                        <img src="assets/illustration/Bathome2.png" alt="">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="image2">
-                        <img src="assets/illustration/Bathome3.png" alt="">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="image3">
-                        <img src="assets/illustration/Bathome3.png" alt="">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class="slider2">
-                    <img src="assets/logos/icon_flèche_2.png">
-                </div>
+                </h2>
             </div>
-            <div class="image">
-                <img src="assets/illustration/Bathome_ba2.png" alt="">
-            </div>   
-            </section>
+            <div class="col-lg">
+                <div class="card">
+                    <img src="assets/illustration/Bathome4.png" alt="">
+                </div>
+                <h2 class="card-title text-white">
+                    Ben Affleck <br>
+                20016- 2017/2020 - 2023
+                </h2>
+            </div>
+         </div>
+        </div>
+     </section>
 
-            <section class="contact" id="contact">
-                <form action="contact">
-                    <h2 class="title">PRENONS CONTACT</h2>
-                    <h3 class="contact-title">ADDRESSE MAIL</h3>
-                    <input type="email" name="email" placeholder="Enter mail here">
-                </form>
+     <!--second section-->
+     <section class="section-content mt-5" id="adversaire">
+        <div class="container-fluid mt-3">
+      <h1 class="title text-white">NEMESIS</h1>
+      <p class="content-text text-white mt-3">
+        Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
+        du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers
+        ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+      </p>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <img src="assets/illustration/Bathome5.png" alt="">
+            </div>
+            <h2 class="card-title text-white">
+                The Riddler - Paul Dano <br>
+(2022)
+            </h2>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <img src="assets/illustration/Bathome6.png" alt="">
+            </div>
+            <h2 class="card-title text-white">
+                Le Joker - Heath Ledger <br>
+                (2008)
+            </h2>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <img src="assets/illustration/Bathome7.png" alt="">
+            </div>
+            <h2 class="card-title text-white">
+                Darkseid - Ray Porter <br>
+                (2022)
+            </h2>
+        </div>
+      </div>
+    </div>
+ </section>
 
-            </section>
+ <!--Third section-->
+
+ <section class="section-content mt-5" id="cinema">
+    <div class="container-fluid mt-3">
+  <h1 class="title text-white">ALLIES</h1>
+  <p class="content-text text-white mt-3">
+    Alfred est le majordome des Wayne. A leur mort il occupe de l’éducation du jeune Bruce
+avant d'assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi
+nettoyer sa ville de la criminalité qui y règne.
+  </p>
+</div>
+<div class="row">
+    <div class="col-lg">
+        <div class="card">
+            <img src="assets/illustration/Bathome9.png" alt="">
+        </div>
+        <h2 class="card-title text-white">
+            Alfred Pennyworth - Michael Cain <br>
+            (2006 - 2008 - 2012)
+        </h2>
+    </div>
+    <div class="col-lg">
+        <div class="card">
+            <img src="assets/illustration/Bathome8.png" alt="">
+        </div>
+        <h2 class="card-title text-white">
+            Catwoman - Zoé Kravitz <br>
+(2008)
+        </h2>
+    </div>
+    <div class="col-lg">
+        <div class="card">
+            <img src="assets/illustration/Bathome10.png" alt="">
+        </div>
+        <h2 class="card-title text-white">
+            James Gordon <br>
+            (2014-2019)
+        </h2>
+    </div>
+ </div>
+</div>
+</section>
+
+<!--Justice League-->
+
+<section class="section-content mt-5" id="cinema">
+    <div class="container-fluid mt-3">
+  <h1 class="title text-white">JUSTICE LEAGUE</h1>
+  <p class="content-text text-white mt-3">
+    Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils
+    doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou
+    surnaturelles menacent son existence.
+  </p>
+</div>
+<img src="assets/illustration/Bathome11.png" alt="">
 
 
+</section>
 
-         
-        
-    </main>
+
+<!--Multimedia-->
+
+<section class="section-content mt-5" id="cinema">
+    <div class="container-fluid mt-5">
+  <h1 class="title text-white">MULTIMEDIA</h1>
+ </div>
+ <!-- Slide -->
+ <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/illustration/Bathome_ba1.png" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3 class="titre">Batman Begins</h3>
+            <p class="caption">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents.
+                 Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+                 la lutte contre le crime sous le nom de Batman.</p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="assets/illustration/Bathome3.png" alt="Chicago">
+          <div class="carousel-caption">
+            <h3 class="titre">The Dark Knight</h3>
+            <p class="caption"> Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents.
+                Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+                la lutte contre le crime sous le nom de Batman.</p>
+
+            </p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="assets/illustration/Bathome4.png" alt="New York">
+          <div class="carousel-caption">
+            <h3 class="titre">The Dark Knight Rises</h3>
+            <p class="caption">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents.
+                Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+                la lutte contre le crime sous le nom de Batman.</p>
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="bande_annonce">
+    <img src="assets/illustration/Bathome_ba2.png" alt="">
+     </div>
+</section>
+
+    <!--Menu deroulant-->
+    <section class="menu_deroulant" id="menu">
+<div class="container_contact text-white">
+    <h2 class="contact_title text-white">PRENONS CONTACT</h2>
+    <div class="contact-content">
+        <h2 class="content">ADDRESSE EMAIL</h2>
+        <div class="form">
+            <input type="email" name="email" placeholder="Enter mail here">
+    </div>
+    <h2 class="content mt-5">NEWSLETTER</h2>
+    <p class="content mt-5">En couchant sur cette vous acceptez de recevoir une actualité concernant les aventures de
+        Batman : <input type="checkbox" name="ckeckbox" id="ckeched">
+    </p>
+    <div class="form">
+        <input type="email" name="email" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
+        <span>&#9660;</span>
+</div>
+
+<div class="form">
+    <input type="email" name="email" placeholder="Souhaitez-vous recevoir des news">
+</div>
+      <!--button-->
+      <div class="btn">
+        <button type="button" class="btn btn-outline-info text-white">Des films</button>
+        <button type="button" class="btn btn-outline-info text-white">Des comics</button>
+        <button type="button" class="btn btn-outline-info text-white">De tout</button>
+      </div>
+      <h2 class="content mt-5">MESSAGE</h2>
+      <div class="form">
+        <input type="email" name="email" placeholder="Laisser un commentaire pour la communauté">
+    </div>
+    <!--confirm button-->
+    <div class="confirm">
+        <button type="submit" class="btn btn-primary mt-5">CONFIRMER</button>
+    </div>
+  </div>
+</div>
+    </section>
+</main>
     <!--footer-->
     <footer>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="assets/logos/icon_guillemets_1.png" alt="" class="guillemet1">
+                </div>
+                <div class="col-sm-8">
+                    <p class="cite">
+                        La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.
+                    </p>
+                    <p class="cite_suite">The Dark Knight : Le Chevalier Noir -</p>
+                    <p class="cite_suite">Le Joker à Batman (2008)</p>
+                </div>
+                <div class="col-sm-2">
+                    <img src="assets/logos/icon_guillemets_2.png" alt="" class="guillemet2">
+                </div>
+            </div>
+            <!--Finally items-->
+            <div class="finally-container">
+                <p class="end-text text-white">
+                    <img src="assets/logos/icon_WB.png" alt="wb_icon"> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                    Snyder & Reeves
+                    </p>
+                <!--logos-->
+                <div class="logo-content">
+                    <img src="assets/logos/logo_sayna_white.png" alt="">
+                    <img src="assets/logos/icon_x.png" alt="">
+                    <img src="assets/logos/icon_DC.png" alt="">
+                    <img src="assets/logos/icon_facebook.png" alt="">
+                    <img src="assets/logos/icon_ig.png" alt="">
+                    <img src="assets/logos/icon_tw.png" alt="">
+                </div>
+                </div>
+                
+
+        </div>
 
     </footer>
 </body>
