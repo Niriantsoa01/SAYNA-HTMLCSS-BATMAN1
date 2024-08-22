@@ -211,21 +211,47 @@ main {
 
 
 .title {
-    margin: auto 50px;
+    margin: auto 150px;
     display: block;
     font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
 }
 
 .content-text {
     width: 70%;
-    margin-left: 50px;
-    font-family: 'Rajdhani', sans-serif;
+    margin-left: 150px;
+    line-height: 30px;
+    font-family:  sans-serif;
     font-size: 20px;
 }
 
+ /* photo nemesis */
+
+ .nemesis {
+    display: block;
+    width: 200px;
+    margin-left: 20%;
+    margin-top: -7%;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* allies */
+
+.side {
+    float: right;
+    
+}
+
 @media (max-width:768px) {
-    .content-text{
-        font-size: 15px !important;
+    .content-text {
+        font-size: 15px !important; 
+        margin: auto 50px;
+    }
+    .title {
+        font-size: 30px;
+        margin: auto 50px;
     }
 
 }
@@ -233,6 +259,7 @@ main {
 .container-card {
     display: flex;
     justify-content: center;
+    margin: auto 50%;
 
 }
 
@@ -258,6 +285,12 @@ main {
     .justice {
         width: 100%;
         height: auto; 
+      }
+
+      .section-content .nemesis {
+        width: 100px;
+        margin-top: -10%;
+        margin-left: 30%;
       }
     }
 
@@ -293,6 +326,13 @@ main {
 
 .card-title:hover {
     transform: scale(1.1);
+}
+
+@media (max-width:768px) {
+    .card-title {
+    width: 200px;
+    margin: auto 30px;
+    }
 }
 
 /*Carousel*/
@@ -450,6 +490,7 @@ main {
 .content {
     margin-top: 150px;
     margin:auto 200px;
+    line-height: 50px;
     width: 650px;
     letter-spacing: 3px;
 }
@@ -471,6 +512,13 @@ form input {
     margin-left: 200px;
     margin-top: 30px;
     outline: none;
+}
+
+form input[type="checkbox"] {
+    margin-top: 3px;
+    position: absolute;
+    width: 20px;
+    left: 25%;
 }
 
 span {
@@ -527,6 +575,10 @@ span {
         margin-top: 30px;
         outline: none;
     }
+
+    form input[type="checkbox"] {
+        left: 95%;
+    }
     
     }
 
@@ -562,7 +614,7 @@ span {
     display: flex;
     justify-content: center;
     color: white;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 #button {
@@ -570,12 +622,29 @@ span {
 }
 
 .modal-content {
-    background-color: #5f4646d8;
+    background: linear-gradient(
+        143deg,
+        rgba(237,222,191,0.4),
+        rgba(25,88,125,0.4) 80%
+    );
     margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 70%;
-    height: 500px;
+    position: absolute;
+    margin: auto;
+    left: 350px;
+    top: 100px;
+    z-index: 1;
+    padding: 10px;
+    border: none;
+    width: 50%;
+    height: 400px;
+}
+
+.inside {
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(92, 92, 137);
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px black;
 }
 
 .close {
